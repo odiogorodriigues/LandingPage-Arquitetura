@@ -44,6 +44,7 @@ header {
     background-color: #F9F9F9;
     gap: 99px;
     justify-content: space-evenly;
+    padding-left: 10px;
 }
 
     #menu-information h1{
@@ -161,3 +162,80 @@ footer {
             transition: 0.5s;
             box-shadow: 0px 10px 20px #5833067c;
         }
+
+@media screen and (max-width: 1024px) {
+    #menu-about {
+        padding: 0 10px;
+    }
+    #card h1 {
+        line-height: normal;
+    }
+    #card br {
+        display: none;
+    }
+    #menu-about img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-information {
+        gap: 30px;
+    }
+
+    #menu-information h1 {
+        font-size: 20px;
+    }
+
+    #menu-information p {
+        font-size: 15px;
+    }
+
+    #menu-about {
+        display: flex;
+        flex-direction: column; 
+        height: auto;
+        padding: 10px 0;
+        gap: 0px;
+    }
+    #menu-about h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    #menu-about h2 {
+        font-size: 20px;
+    }   
+    #menu-about img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    footer form input {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #menu-information  {
+        gap: 10px;
+    }
+
+    #menu-information h1 {
+        font-size: 100%;
+    }
+
+    #menu-information p {
+        font-size: 80%;
+    }
+
+    header h1 {
+        margin-top: 150px;
+    }
+}
+
